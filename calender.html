@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            Cavendish University
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html" class="active">Calendar</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <main class="container">
+        <header style="margin-bottom: 2rem;">
+            <h1 style="color: var(--primary-color);">Academic Calendar</h1>
+            <p style="color: var(--text-secondary);">Important dates for the current academic year.</p>
+        </header>
+
+        <!-- Semester Progress -->
+        <section class="progress-container">
+            <div class="progress-header">
+                <span>Spring Semester Progress</span>
+                <span id="progress-text">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="semester-progress"></div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="timeline">
+            <!-- Items -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="badge badge-blue">Term Start</span>
+                    <h3 style="margin: 0.5rem 0;">First Day of Classes</h3>
+                    <p class="event-date">January 15, 2026</p>
+                    <p style="color: var(--text-secondary);">Welcome back to campus! Ensure your schedule is finalized.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="badge badge-amber">Exams</span>
+                    <h3 style="margin: 0.5rem 0;">Midterm Examinations</h3>
+                    <p class="event-date">March 2 - March 6, 2026</p>
+                    <p style="color: var(--text-secondary);">Check your department board for specific course examination schedules.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="badge badge-green">Holiday</span>
+                    <h3 style="margin: 0.5rem 0;">Spring Break</h3>
+                    <p class="event-date">March 16 - March 20, 2026</p>
+                    <p style="color: var(--text-secondary);">No classes. Campus facilities will operate on reduced hours.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="badge badge-amber">Exams</span>
+                    <h3 style="margin: 0.5rem 0;">Final Examinations</h3>
+                    <p class="event-date">May 11 - May 15, 2026</p>
+                    <p style="color: var(--text-secondary);">Comprehensive final exams. Good luck to all students!</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="badge badge-blue">Term End</span>
+                    <h3 style="margin: 0.5rem 0;">Commencement Ceremony</h3>
+                    <p class="event-date">May 22, 2026</p>
+                    <p style="color: var(--text-secondary);">Graduation ceremony for the Class of 2026.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
