@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            Cavendish University
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome back, Student!</h1>
+            <p>Access your university announcements, upcoming events, and academic calendar all in one place.</p>
+        </section>
+
+        <section class="dashboard-grid">
+            <!-- Latest Announcement Card -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-icon">📢</span>
+                    <h2>Latest Announcement</h2>
+                </div>
+                <div class="card-content">
+                    <span class="badge badge-amber" style="margin-bottom: 0.75rem;">Important</span>
+                    <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Fall Semester Registration</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Course registration for the upcoming Fall semester is now open. Please ensure you meet with your academic advisor before registering.</p>
+                    <a href="#" class="card-link">Read full announcement →</a>
+                </div>
+            </article>
+
+            <!-- Countdown Card -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-icon">🎓</span>
+                    <h2>Graduation Countdown</h2>
+                </div>
+                <div class="card-content">
+                    <p style="color: var(--text-secondary); text-align: center;">Time remaining until Class of 2026 Graduation Ceremony:</p>
+                    <div class="countdown-grid" id="graduation-countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="days">--</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="hours">--</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="minutes">--</span>
+                            <span class="countdown-label">Mins</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="seconds">--</span>
+                            <span class="countdown-label">Secs</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Next Upcoming Event Card -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-icon">📅</span>
+                    <h2>Next Event</h2>
+                </div>
+                <div class="card-content" id="next-event-container">
+                    <!-- Injected by JS -->
+                    <p style="color: var(--text-secondary);">Loading upcoming event...</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
