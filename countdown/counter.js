@@ -6,7 +6,7 @@ const universityEvents = [
         title: "Tech Innovation Summit 2026",
         date: new Date("2026-05-15T09:00:00"),
         description: "Join industry leaders and alumni for a day of tech talks and networking.",
-        location: "Main Auditorium",
+        location: "Basement B01",
         type: "Conference"
     },
     {
@@ -14,7 +14,7 @@ const universityEvents = [
         title: "Career Fair",
         date: new Date("2026-05-20T10:00:00"),
         description: "Meet with over 50 top employers hiring for internships and full-time roles.",
-        location: "Student Union",
+        location: "Room 212, Block B",
         type: "Career"
     },
     {
@@ -22,7 +22,7 @@ const universityEvents = [
         title: "Guest Lecture: AI Ethics",
         date: new Date("2026-06-05T14:00:00"),
         description: "Dr. Sarah Johnson discusses the ethical implications of modern AI systems.",
-        location: "Room 402, Science Block",
+        location: "Room 105, Block A",
         type: "Lecture"
     },
     {
@@ -30,7 +30,7 @@ const universityEvents = [
         title: "Summer Music Festival",
         date: new Date("2026-06-12T17:00:00"),
         description: "Annual campus music festival featuring student bands and local artists.",
-        location: "Campus Green",
+        location: "Seyani Campus",
         type: "Social"
     }
 ];
@@ -144,7 +144,7 @@ const initProgressBar = () => {
 
     // Dummy logic for semester progress (Jan 15 to May 22)
     const startDate = new Date("2026-01-15").getTime();
-    const endDate = new Date("2026-05-22").getTime();
+    const endDate = new Date("2026-09-15").getTime();
     const now = new Date().getTime();
 
     let percentage = 0;
